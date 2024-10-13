@@ -21,8 +21,17 @@
     }
 
     #hero {
-        background-image: url('images/hero.jpg');
+        background-image: url('images/hero_mobile.png');
 
+
+    }
+
+    @media (min-width:1025px) {
+        #hero {
+            background-image: url('images/hero.jpg');
+
+
+        }
     }
 
 </style>
@@ -31,7 +40,7 @@
 
     <!-- <div class="fixed w-screen"><img src="images/logo.png" class="h-32 z-50" alt=""></div> -->
 
-    <div id="hero" class="flex items-center  h-screen bg-auto md:bg-cover">
+    <div id="hero" class="py-32 md:py-0 md:flex items-center  h-screen  md:bg-cover">
         <div class="max-w-6xl">
             <div class="heroText bg-white py-6 pl-4 md:pl-32 heading uppercase text-5xl md:text-8xl ">
                 Your Trusted Partner in Motorcycle Care
